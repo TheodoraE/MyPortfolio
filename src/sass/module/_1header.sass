@@ -1,0 +1,119 @@
+*
+    scroll-behavior: smooth
+    body
+        margin: 0
+        header
+            padding: 0.5% 1.5% 0% 1.5%
+            width: 100%
+            position: fixed
+            top: 0%
+            display: flex
+            justify-content: space-between
+            // border: black solid 2px
+            #theo
+                img
+                    height: 70px
+            #headerDroit
+                width: fit-content
+                display: flex
+                justify-content: space-around
+                align-items: center
+                a
+                    margin: 0% 10%
+                    i
+                        font-size: 30px
+                        color: $white
+        #sectionHome
+            background: linear-gradient(rgba(213, 213, 213, 0.576), rgba(0, 0, 0, 0.255)), url("../img/bg/sand.jpg")
+            background-size: cover
+            background-repeat: no-repeat
+            height: 100vh
+            #home1
+                height: 90vh
+                display: flex
+                align-items: center
+                #sideNav
+                    width: 10%
+                    li
+                        list-style: none
+                        margin: 4% 0%
+                        a
+                            font-weight: bold
+                            font-size: 20px
+                            text-decoration: none
+                            color: $white
+                            position: relative
+                            max-width: max-content
+                        a::before
+                            content: ""
+                            position: absolute
+                            bottom: -5px
+                            background-color: $white
+                            width: 0px
+                            height: 5px
+                            transition: 1s
+                        a:hover::before
+                            width: 100%
+                #homeContent
+                    width: 90%
+                    display: flex
+                    justify-content: center
+                    border: solid black 1px
+                    height: 75vh
+                    margin: 5% 0% 0% 0%
+                    padding: 5%
+                    //// 1ère slide : HOME
+                    #divTitle
+                        width: 100%
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        height: 100%
+                        div
+                            padding: 1% 1.5%
+                            h1
+                                font-size: 75px
+                                font-weight: bold
+                                color: $white
+                            h2
+                                text-align: center
+                                font-size: 55px
+                                color: $dark
+                                // font-weight: bold
+                        div:hover
+                            border: $white 3px solid
+                    //// 2ème slide : My work
+                    #divWork
+                        width: 100%
+                        display: flex
+                        border: white 1px solid
+                        #workImg
+                            div
+                                img
+                                    height: 150px
+                                    width: 150px
+            #home2
+                height: 10vh
+                display: flex
+                justify-content: flex-end
+                align-items: flex-start
+                #scroll
+                    height: 10vh
+                    padding: 0% 5%
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    p
+                        color: $white
+                        font-size: 18px
+                        margin: 0% 0% 7% 0%
+                    i
+                        text-align: center
+                        padding: 0% 0% 33% 0%
+                        font-size: 20px
+                        color: $white
+
+
+
+
+// background: linear-gradient(rgba(22, 20, 20, 0.877), rgba(0, 0, 0, 0.849)),url("../images/banner1.jpg")
