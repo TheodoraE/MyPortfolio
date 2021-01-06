@@ -3,24 +3,33 @@
     body
         margin: 0
         header
+            padding: 1% 1.5%
+            width: 100%
+            position: fixed
+            top: 0%
+            display: flex
+            justify-content: space-between
+            border: black solid 2px
             // Grande div
-            #homePage
-                nav
-                    // color: white
-                    // background: linear-gradient(rgba(65, 56, 56, 0.877), rgba(206, 202, 202, 0.849))
-                    a
-                        font-weight: bold
-                        color: white
-                    a:first-child
-                        // On ne voit pas le bouton en responsive
-                    button
-                        span
-                #accueil
-                    #bgHome
-                        background: url("../img/sand.jpg")
-                        background-size: cover
-                        background-repeat: no-repeat
-                        height: 100vh
+            #theo
+                img
+                    height: 60px
+            #headerDroit
+                width: 300px
+                display: flex
+                justify-content: space-around
+                align-items: center
+                i
+                    font-size: 30px
+                    color: $white
+                    margin: 0% 2%
+
+        #bgHome
+            background: url("../img/sand.jpg")
+            background-size: cover
+            background-repeat: no-repeat
+            height: 100vh
+
 
 
 

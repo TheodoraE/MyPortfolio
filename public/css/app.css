@@ -15777,12 +15777,34 @@ readers do not read off random characters that represent icons */
   margin: 0;
 }
 
-* body header #homePage nav a {
-  font-weight: bold;
-  color: white;
+* body header {
+  padding: 1% 1.5%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  border: black solid 2px;
 }
 
-* body header #homePage #accueil #bgHome {
+* body header #theo img {
+  height: 60px;
+}
+
+* body header #headerDroit {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+* body header #headerDroit i {
+  font-size: 30px;
+  color: #fff;
+  margin: 0% 2%;
+}
+
+* body #bgHome {
   background: url("../img/sand.jpg");
   background-size: cover;
   background-repeat: no-repeat;
