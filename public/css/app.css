@@ -15895,7 +15895,6 @@ readers do not read off random characters that represent icons */
 * body #sectionHome #home1 #homeContent #divWork {
   width: 100%;
   display: flex;
-  border: white 1px solid;
 }
 
 * body #sectionHome #home1 #homeContent #divWork div {
@@ -15904,13 +15903,26 @@ readers do not read off random characters that represent icons */
 
 * body #sectionHome #home1 #homeContent #divWork div h1 {
   font-weight: bold;
+  font-size: 75px;
+  margin: 0% 0% 5% 0%;
 }
 
 * body #sectionHome #home1 #homeContent #divWork div p {
   color: #343a40;
+  font-size: 20px;
+  width: 75%;
+  margin: 10% 0% 0% 5%;
+  font-weight: bold;
 }
 
-* body #sectionHome #home1 #homeContent #divWork a #workImg {
+* body #sectionHome #home1 #homeContent #divWork div button {
+  margin: 10% 0% 0% 20%;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 5px;
+}
+
+* body #sectionHome #home1 #homeContent #divWork a {
   width: 65%;
 }
 
