@@ -15810,6 +15810,10 @@ readers do not read off random characters that represent icons */
   color: #fff;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 * body #sectionHome {
   background: linear-gradient(rgba(213, 213, 213, 0.576), rgba(0, 0, 0, 0.255)), url("../img/bg/sand.jpg");
   background-size: cover;
@@ -15855,7 +15859,7 @@ readers do not read off random characters that represent icons */
   width: 100%;
 }
 
-* body #sectionHome #home1 #homeContent {
+* body #sectionHome #home1 #homeContent1 {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -15864,7 +15868,7 @@ readers do not read off random characters that represent icons */
   padding: 5%;
 }
 
-* body #sectionHome #home1 #homeContent #divTitle {
+* body #sectionHome #home1 #homeContent1 #divTitle {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -15872,42 +15876,51 @@ readers do not read off random characters that represent icons */
   height: 100%;
 }
 
-* body #sectionHome #home1 #homeContent #divTitle div {
+* body #sectionHome #home1 #homeContent1 #divTitle div {
   padding: 1% 1.5%;
 }
 
-* body #sectionHome #home1 #homeContent #divTitle div h1 {
+* body #sectionHome #home1 #homeContent1 #divTitle div h1 {
   font-size: 75px;
   font-weight: bold;
   color: #fff;
 }
 
-* body #sectionHome #home1 #homeContent #divTitle div h2 {
+* body #sectionHome #home1 #homeContent1 #divTitle div h2 {
   text-align: center;
   font-size: 55px;
   color: #343a40;
 }
 
-* body #sectionHome #home1 #homeContent #divTitle div:hover {
+* body #sectionHome #home1 #homeContent1 #divTitle div:hover {
   border: #fff 3px solid;
 }
 
-* body #sectionHome #home1 #homeContent #divWork {
+* body #sectionHome #home1 #homeContent2 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  margin: 5% 0% 0% 0%;
+  padding: 5%;
+}
+
+* body #sectionHome #home1 #homeContent2 #divWork {
   width: 100%;
   display: flex;
 }
 
-* body #sectionHome #home1 #homeContent #divWork div {
+* body #sectionHome #home1 #homeContent2 #divWork div {
   width: 35%;
 }
 
-* body #sectionHome #home1 #homeContent #divWork div h1 {
+* body #sectionHome #home1 #homeContent2 #divWork div h1 {
   font-weight: bold;
   font-size: 75px;
   margin: 0% 0% 5% 0%;
 }
 
-* body #sectionHome #home1 #homeContent #divWork div p {
+* body #sectionHome #home1 #homeContent2 #divWork div p {
   color: #343a40;
   font-size: 20px;
   width: 75%;
@@ -15915,22 +15928,74 @@ readers do not read off random characters that represent icons */
   font-weight: bold;
 }
 
-* body #sectionHome #home1 #homeContent #divWork div button {
+* body #sectionHome #home1 #homeContent2 #divWork div button {
   margin: 10% 0% 0% 20%;
   border: none;
   padding: 1% 2%;
   border-radius: 5px;
 }
 
-* body #sectionHome #home1 #homeContent #divWork a {
+* body #sectionHome #home1 #homeContent2 #divWork a {
   width: 65%;
 }
 
-* body #sectionHome #home1 #homeContent #divWork a #workImg div {
+* body #sectionHome #home1 #homeContent2 #divWork a #workImg div {
   display: flex;
 }
 
-* body #sectionHome #home1 #homeContent #divWork a #workImg div img {
+* body #sectionHome #home1 #homeContent2 #divWork a #workImg div img {
+  height: 260px;
+  width: 477px;
+}
+
+* body #sectionHome #home1 #homeContent3 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  margin: 5% 0% 0% 0%;
+  padding: 5%;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout {
+  width: 100%;
+  display: flex;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout div {
+  width: 35%;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout div h1 {
+  font-weight: bold;
+  font-size: 75px;
+  margin: 0% 0% 5% 0%;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout div p {
+  color: #343a40;
+  font-size: 20px;
+  width: 75%;
+  margin: 10% 0% 0% 5%;
+  font-weight: bold;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout div button {
+  margin: 10% 0% 0% 20%;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 5px;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout a {
+  width: 65%;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg div {
+  display: flex;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg div img {
   height: 260px;
   width: 477px;
 }
