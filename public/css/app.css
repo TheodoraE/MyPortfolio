@@ -15795,7 +15795,7 @@ readers do not read off random characters that represent icons */
 }
 
 * body header #headerDroit {
-  width: fit-content;
+  width: 250px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15805,9 +15805,41 @@ readers do not read off random characters that represent icons */
   margin: 0% 10%;
 }
 
-* body header #headerDroit a i {
-  font-size: 30px;
+* body header #headerDroit i {
+  font-size: 28px;
   color: #fff;
+}
+
+* body header #headerDroit #moins {
+  font-size: 28px;
+  color: #fff;
+}
+
+* body header #headerDroit div #btnNav #plus {
+  font-size: 40px;
+  padding: 0% 5% 0% 0%;
+}
+
+* body #navRight {
+  background-color: lightblue;
+  height: 100vh;
+}
+
+* body #navRight ul {
+  padding: 8% 5% 5% 5%;
+  list-style: none;
+  height: 100%;
+}
+
+* body #navRight ul li {
+  margin: 3% 0%;
+  text-align: center;
+}
+
+* body #navRight ul li a {
+  font-size: 80px;
+  color: #fff;
+  font-weight: bold;
 }
 
 * body #sectionHome {
@@ -16007,12 +16039,16 @@ readers do not read off random characters that represent icons */
   background-color: #b1632c;
 }
 
-* body #sectionHome #home1 #homeContent3 #divAbout #AboutImg {
+* body #sectionHome #home1 #homeContent3 #divAbout a {
   width: 65%;
 }
 
-* body #sectionHome #home1 #homeContent3 #divAbout #AboutImg img {
-  width: 95%;
+* body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg {
+  display: flex;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg img {
+  height: 550px;
 }
 
 * body #sectionHome #home1 #homeContent4 {

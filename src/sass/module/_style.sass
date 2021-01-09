@@ -15,15 +15,37 @@
                 img
                     height: 70px
             #headerDroit
-                width: fit-content
+                width: 250px
                 display: flex
                 justify-content: space-around
                 align-items: center
                 a
                     margin: 0% 10%
-                    i
-                        font-size: 30px
+                i
+                    font-size: 28px
+                    color: $white
+                #moins 
+                    font-size: 28px
+                    color: $white
+                div
+                    #btnNav
+                        #plus
+                            font-size: 40px
+                            padding: 0% 5% 0% 0%
+        #navRight
+            background-color: lightblue
+            height: 100vh
+            ul
+                padding: 8% 5% 5% 5%
+                list-style : none
+                height: 100%
+                li
+                    margin: 3% 0%
+                    text-align: center
+                    a
+                        font-size: 80px
                         color: $white
+                        font-weight: bold
         #sectionHome
             background: linear-gradient(rgba(213, 213, 213, 0.576), rgba(0, 0, 0, 0.255)), url("../img/bg/sand.jpg")
             background-size: cover
@@ -166,10 +188,12 @@
                                 padding: 1% 5%
                             button:hover
                                 background-color:  #b1632c
-                        #AboutImg
+                        a
                             width: 65%
-                            img
-                                width: 95%
+                            #AboutImg
+                                display: flex
+                                img
+                                    height: 550px
                 //// 4ème slide : CONTACT
                 #homeContent4
                     width: 90%

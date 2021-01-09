@@ -1,13 +1,54 @@
 // let body = document.body
 
-// Affichage des slides via les ancres
+//////// Déclarations de variables
+let logoET = document.getElementById('logoET');
+
+let plus = document.getElementById('plus');
+let nav = document.querySelector('.navRight');
+
 let lienSend = document.getElementsByClassName("sendTo");
 let homeContent1 = document.getElementById('homeContent1');
 let homeContent2 = document.getElementById('homeContent2');
 let homeContent3 = document.getElementById('homeContent3');
 let homeContent4 = document.getElementById('homeContent4');
-console.log(lienSend)
 
+let btnWork = document.getElementById('btnWork');
+let btnAbout = document.getElementById('btnAbout');
+let btn2Work = document.querySelector('.btnWork');
+let btn2About = document.querySelector('.btnAbout');
+
+let sectionHome = document.getElementById('sectionHome');
+let sectionWork = document.getElementById('sectionWork');
+let sectionAbout = document.getElementById('sectionAbout');
+
+let navRight = document.querySelector('#navRight');
+let moins = document.querySelector('#moins');
+console.log(moins)
+
+// Animation sur Logo Header
+logoET.addEventListener('mouseover', function(){
+    logoET.style.transform = "rotateY(180deg)"
+});
+logoET.addEventListener('mouseout', function(){
+    logoET.style.transform = "initial"
+});
+
+// Affichage de la Navbar coin supérieur droit
+plus.addEventListener('click', function(){
+    sectionHome.style.display = "none";
+    navRight.style.display = "block";
+    plus.style.display = "none";
+    moins.style.display = "inline-block";
+});
+moins.addEventListener('click', function(){
+    navRight.style.display = "none";
+    sectionHome.style.display = "block";
+    moins.style.display = "none";
+    plus.style.display = "inline-block";
+});
+
+
+// Affichage des slides via les ancres
 for (let i = 0; i < lienSend.length; i++) {
     lienSend[i].addEventListener('click', function(){
         switch(i){
@@ -16,6 +57,7 @@ for (let i = 0; i < lienSend.length; i++) {
                 lienSend[1].style.color = "#fff";
                 lienSend[2].style.color = "#fff";
                 lienSend[3].style.color = "#fff";
+                
                 homeContent1.style.display = "block";
                 homeContent2.style.display = "none";
                 homeContent3.style.display = "none";
@@ -55,22 +97,7 @@ for (let i = 0; i < lienSend.length; i++) {
     })
 }
 
-
-// let sectionHome = document.getElementById("sectionHome");
-
-// sectionHome.addEventListener('scroll', function(){
-//     // console.log(e)
-//     console.log('scrolled')
-// })
-
 // Affichage des pages via les boutons
-let btnWork = document.getElementById('btnWork');
-let btnAbout = document.getElementById('btnAbout');
-
-let sectionHome = document.getElementById('sectionHome');
-let sectionWork = document.getElementById('sectionWork');
-let sectionAbout = document.getElementById('sectionAbout');
-
 btnWork.addEventListener('click', function(){
     sectionHome.style.display = "none";
     sectionAbout.style.display = "none";
@@ -81,3 +108,21 @@ btnAbout.addEventListener('click', function(){
     sectionWork.style.display = "none";
     sectionAbout.style.display = "block";
 });
+btn2Work.addEventListener('click', function(){
+    sectionHome.style.display = "none";
+    sectionAbout.style.display = "none";
+    sectionWork.style.display = "block";
+});
+btn2About.addEventListener('click', function(){
+    sectionHome.style.display = "none";
+    sectionWork.style.display = "none";
+    sectionAbout.style.display = "block";
+});
+
+
+// let sectionHome = document.getElementById("sectionHome");
+
+// sectionHome.addEventListener('scroll', function(){
+//     // console.log(e)
+//     console.log('scrolled')
+// })
