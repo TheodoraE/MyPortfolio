@@ -41,7 +41,7 @@
 
     <!-- HOMEPAGE -->
         <!-- Try Glitch -->
-    <section id="sectionHome" style="display: none;">
+    <section id="sectionHome" >
         <!-- 1ère row -->
         <div id="home1" class="row m-0">
             <!-- side nav -->
@@ -80,7 +80,7 @@
                     <div>
                         <h1>My Work</h1>
                         <p>Compilation non exhaustive de mes travaux réalisés en développement Web</p>
-                        <button>Voir plus</button>
+                        <button id="btnWork">Voir plus</button>
                     </div>
                     <!-- div Images -->
                     <a href="">
@@ -105,7 +105,7 @@
                     <div>
                         <h1>About me</h1>
                         <p>Apprenez à me connaître</p>
-                        <button>En savoir plus</button>
+                        <button id="btnAbout">En savoir plus</button>
                     </div>
                     <!-- div Images -->
                     <div id="AboutImg">
@@ -142,12 +142,27 @@
     </section>
 
     <!-- 2ème page WORK -->
-    <section id="SectionWork">
-        <div >
-
+    <section id="sectionWork" style="display: none;">
+        <div id="workTitle">
+            <div>
+                <h1>Mes réalisations</h1>
+            </div>
         </div>
+        <div>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita nostrum pariatur itaque, perferendis quisquam voluptate reprehenderit amet fugit eaque molestias laboriosam sapiente molestiae tempora? Labore ab alias hic iure.</p> -->
+        </div>
+<!--  Ne pas oublier bouton de retour -->
     </section>
 
+    <!-- 3ème page ABOUT -->
+    <section id="sectionAbout" style="display: none;">
+        <div id="aboutTitle">
+            <div>
+                <h1>A propos de moi</h1>
+            </div>
+        </div>
+        <!--  Ne pas oublier bouton de retour -->
+    </section>
 
 
 

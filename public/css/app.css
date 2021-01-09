@@ -15911,7 +15911,7 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div h1 {
-  color: #ae4a02;
+  color: #2F4F4F;
   font-weight: bold;
   font-size: 75px;
   margin: 0% 0% 8% 0%;
@@ -15923,7 +15923,7 @@ readers do not read off random characters that represent icons */
   margin: 0% 15% 0% 5%;
   font-weight: bold;
   text-align: right;
-  color: #ae4a02;
+  color: #2F4F4F;
   background-color: #ffffff5d;
   padding: 5%;
 }
@@ -15940,7 +15940,7 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div button:hover {
-  background-color: #b1632c;
+  background-color: #2F4F4F;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork a {
@@ -15975,14 +15975,14 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div h1 {
-  color: #2F4F4F;
+  color: #ae4a02;
   font-weight: bold;
   font-size: 75px;
   margin: 0% 0% 5% 0%;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div p {
-  color: #2F4F4F;
+  color: #ae4a02;
   font-size: 20px;
   text-align: right;
   width: 50%;
@@ -16004,7 +16004,7 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div button:hover {
-  background-color: #2F4F4F;
+  background-color: #b1632c;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout #AboutImg {
@@ -16102,6 +16102,32 @@ readers do not read off random characters that represent icons */
   padding: 0% 0% 33% 0%;
   font-size: 20px;
   color: #fff;
+}
+
+* body #sectionWork #workTitle {
+  background-color: #2F4F4F;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* body #sectionWork #workTitle div h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+* body #sectionAbout #aboutTitle {
+  background-color: #ae4a02;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* body #sectionAbout #aboutTitle div h1 {
+  font-size: 90px;
+  font-weight: bold;
 }
 
 button:focus {

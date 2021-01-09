@@ -23,7 +23,7 @@ for (let i = 0; i < lienSend.length; i++) {
                 break;
             case 1:
                 lienSend[0].style.color = "#fff";
-                lienSend[1].style.color = "#ae4a02";
+                lienSend[1].style.color = "#2F4F4F";
                 lienSend[2].style.color = "#fff";
                 lienSend[3].style.color = "#fff";
                 homeContent1.style.display = "none";
@@ -34,7 +34,7 @@ for (let i = 0; i < lienSend.length; i++) {
             case 2:
                 lienSend[0].style.color = "#fff";
                 lienSend[1].style.color = "#fff";
-                lienSend[2].style.color = "#2F4F4F";
+                lienSend[2].style.color = "#ae4a02";
                 lienSend[3].style.color = "#fff";
                 homeContent1.style.display = "none";
                 homeContent2.style.display = "none";
@@ -62,3 +62,22 @@ for (let i = 0; i < lienSend.length; i++) {
 //     // console.log(e)
 //     console.log('scrolled')
 // })
+
+// Affichage des pages via les boutons
+let btnWork = document.getElementById('btnWork');
+let btnAbout = document.getElementById('btnAbout');
+
+let sectionHome = document.getElementById('sectionHome');
+let sectionWork = document.getElementById('sectionWork');
+let sectionAbout = document.getElementById('sectionAbout');
+
+btnWork.addEventListener('click', function(){
+    sectionHome.style.display = "none";
+    sectionAbout.style.display = "none";
+    sectionWork.style.display = "block";
+});
+btnAbout.addEventListener('click', function(){
+    sectionHome.style.display = "none";
+    sectionWork.style.display = "none";
+    sectionAbout.style.display = "block";
+});
