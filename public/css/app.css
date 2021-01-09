@@ -15810,10 +15810,6 @@ readers do not read off random characters that represent icons */
   color: #fff;
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
 * body #sectionHome {
   background: linear-gradient(rgba(213, 213, 213, 0.576), rgba(0, 0, 0, 0.255)), url("../img/bg/sand.jpg");
   background-size: cover;
@@ -15833,12 +15829,12 @@ readers do not read off random characters that represent icons */
 
 * body #sectionHome #home1 #sideNav li {
   list-style: none;
-  margin: 4% 0%;
+  margin: 7% 0%;
 }
 
 * body #sectionHome #home1 #sideNav li a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: #fff;
   position: relative;
@@ -15881,14 +15877,14 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent1 #divTitle div h1 {
-  font-size: 75px;
+  font-size: 80px;
   font-weight: bold;
   color: #fff;
 }
 
 * body #sectionHome #home1 #homeContent1 #divTitle div h2 {
   text-align: center;
-  font-size: 55px;
+  font-size: 60px;
   color: #343a40;
 }
 
@@ -15915,24 +15911,36 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div h1 {
+  color: #ae4a02;
   font-weight: bold;
   font-size: 75px;
-  margin: 0% 0% 5% 0%;
+  margin: 0% 0% 8% 0%;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div p {
-  color: #343a40;
   font-size: 20px;
-  width: 75%;
-  margin: 10% 0% 0% 5%;
+  width: 85%;
+  margin: 0% 15% 0% 5%;
   font-weight: bold;
+  text-align: right;
+  color: #ae4a02;
+  background-color: #ffffff5d;
+  padding: 5%;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div button {
   margin: 10% 0% 0% 20%;
-  border: none;
-  padding: 1% 2%;
-  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  border: #fff solid 1px;
+  border-radius: 30px;
+  background: none;
+  padding: 1% 5%;
+}
+
+* body #sectionHome #home1 #homeContent2 #divWork div button:hover {
+  background-color: #b1632c;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork a {
@@ -15967,37 +15975,105 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div h1 {
+  color: #2F4F4F;
   font-weight: bold;
   font-size: 75px;
   margin: 0% 0% 5% 0%;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div p {
-  color: #343a40;
+  color: #2F4F4F;
   font-size: 20px;
-  width: 75%;
-  margin: 10% 0% 0% 5%;
+  text-align: right;
+  width: 50%;
+  margin: 10% 0% 0% 16%;
   font-weight: bold;
+  background-color: #ffffff5d;
+  padding: 2%;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div button {
   margin: 10% 0% 0% 20%;
-  border: none;
-  padding: 1% 2%;
-  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  border: #fff solid 1px;
+  border-radius: 30px;
+  background: none;
+  padding: 1% 5%;
 }
 
-* body #sectionHome #home1 #homeContent3 #divAbout a {
+* body #sectionHome #home1 #homeContent3 #divAbout div button:hover {
+  background-color: #2F4F4F;
+}
+
+* body #sectionHome #home1 #homeContent3 #divAbout #AboutImg {
   width: 65%;
 }
 
-* body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg div {
+* body #sectionHome #home1 #homeContent3 #divAbout #AboutImg img {
+  width: 95%;
+}
+
+* body #sectionHome #home1 #homeContent4 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  margin: 5% 0% 0% 0%;
+  padding: 5%;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact {
+  width: 100%;
   display: flex;
 }
 
-* body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg div img {
-  height: 260px;
-  width: 477px;
+* body #sectionHome #home1 #homeContent4 #divContact div {
+  width: 40%;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact div h1 {
+  color: #1D6F72;
+  font-weight: bold;
+  font-size: 75px;
+  margin: 0% 0% 8% 0%;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact div p {
+  font-weight: bold;
+  margin: 0% 13% 10% 10%;
+  text-align: right;
+  color: #296D6C;
+  background-color: #ffffff5d;
+  padding: 5%;
+  font-size: 18px;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  width: 75%;
+  margin: 8% 0% 0% 15%;
+  font-weight: bold;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact div a:hover {
+  color: #296D6C;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact div .icone {
+  font-size: 60px;
+  margin: 10% 0% 0% 5%;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact #contactImg {
+  width: 60%;
+}
+
+* body #sectionHome #home1 #homeContent4 #divContact #contactImg img {
+  height: 550px;
 }
 
 * body #sectionHome #home2 {
@@ -16026,4 +16102,8 @@ readers do not read off random characters that represent icons */
   padding: 0% 0% 33% 0%;
   font-size: 20px;
   color: #fff;
+}
+
+button:focus {
+  outline: none;
 }
