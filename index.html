@@ -29,23 +29,23 @@
     <div id="navRight" style="display: none;">
         <ul class="container">
             <li>
-                <a href="#homeContent1">HOME</a>
+                <a href="#homeContent1" class="naviRight">HOME</a>
             </li>
             <li>
-                <a href="#homeContent2">MES REALISATIONS</a>
+                <a href="#sectionWork" class="naviRight">MES REALISATIONS</a>
             </li>
             <li>
-                <a href="#homeContent3">A PROPOS DE MOI</a>
+                <a href="#sectionAbout" class="naviRight">A PROPOS DE MOI</a>
             </li>
             <li>
-                <a href="#homeContent4">CONTACT</a>
+                <a href="#homeContent4" class="naviRight">CONTACT</a>
             </li>
         </ul>
     </div>
 
     <!-- HOMEPAGE -->
         <!-- Try Glitch -->
-    <section id="sectionHome">
+    <section id="sectionHome"  style="display: none;">
         <!-- 1ère row -->
         <div id="home1" class="row m-0">
             <!-- side nav -->
@@ -82,20 +82,20 @@
                 <div id="divWork" >
                     <!-- div description -->
                     <div>
-                        <h1>My Work</h1>
-                        <p>Compilation non exhaustive de mes travaux réalisés en développement Web</p>
+                        <h1>Mes réalisations</h1>
+                        <p>Découvrez mes travaux réalisés</p>
                         <button id="btnWork">Voir plus</button>
                     </div>
                     <!-- div Images -->
                     <a href="#sectionWork" class="btnWork">
                         <div id="workImg">
                             <div>
-                                <img src="./public/img/work/caminar.png" alt="">
-                                <img src="./public/img/work/spatial.png" alt="">
+                                <img src="./public/img/work/1caminar.png" alt="">
+                                <img src="./public/img/work/8spatial.png" alt="">
                             </div>
                             <div>
-                                <img src="./public/img/work/gitExercice.png" alt="">
-                                <img src="./public/img/work/siteDuChef.png" alt="">
+                                <img src="./public/img/work/9gitExercice.png" alt="">
+                                <img src="./public/img/work/6siteDuChef.png" alt="">
                             </div>
                         </div>
                     </a>
@@ -114,7 +114,7 @@
                     <!-- div Images -->
                     <a href="#sectionAbout" class="btnAbout">
                         <div id="AboutImg">
-                            <img src="./public/img/bg/coffee.jpg" alt="">
+                            <img src="./public/img/Koksijde.jpg" alt="">
                         </div>
                     </a>
                 </div>
@@ -133,7 +133,7 @@
                     </div>
                     <!-- div Images -->
                     <div id="contactImg">
-                        <img src="./public/img/bg/lac.jpg" alt="">
+                        <img src="./public/img/LogoETblanc.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -148,15 +148,36 @@
     </section>
 
     <!-- 2ème page WORK -->
-    <section id="sectionWork" style="display: none;">
+    <section id="sectionWork">
         <div id="workTitle">
             <div>
                 <h1>Mes réalisations</h1>
+                <h2>Liste non exhaustive de mes travaux réalisés en développement Web</h2>
             </div>
         </div>
-        <div>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita nostrum pariatur itaque, perferendis quisquam voluptate reprehenderit amet fugit eaque molestias laboriosam sapiente molestiae tempora? Labore ab alias hic iure.</p> -->
+        <!-- Contenu -->
+        <div class="container" class="works">
+            <!-- Sites -->
+            <div>
+                <h3>Tous les sites présents dans cette section ont été réalisés dans le cadre de ma formation "Full-Stack Web Developer" chez MolenGeek</h3>
+            </div>
+            <!-- 1er site : Caminar -->
+            <div id="caminar" class="row m-0">
+                <div class="col-8" class="workDesc">
+                    <h4>"Caminar"</h4>
+                    <p></p>
+                    <p>Langages utilisés : Html et css</p>
+                    <button>Aller vers le site</button>
+                </div>
+                <div class="col-4" class="workImg">
+                    <img src="./public/img/work/1caminar.png" alt="">
+                </div>
+            </div>
         </div>
+
+        <!-- <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita nostrum pariatur itaque, perferendis quisquam voluptate reprehenderit amet fugit eaque molestias laboriosam sapiente molestiae tempora? Labore ab alias hic iure.</p>
+        </div> -->
 <!--  Ne pas oublier bouton de retour -->
     </section>
 
@@ -178,29 +199,6 @@
 
 <!-- TEST -->
 
-            <!-- Navbar -->
-            <!-- <nav class="navbar navbar-expand-lg fixed-top"> -->
-                <!-- gauche -->
-                <!-- <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Theodora<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                  </ul> -->
-                  <!-- droite -->
-                  <!-- <div class="form-inline my-2 my-lg-0">
-
-                  </div>
-                </div>
-              </nav> -->
 
 
     <!-- Jquery -->

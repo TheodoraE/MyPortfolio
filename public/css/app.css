@@ -15939,23 +15939,23 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div {
-  width: 35%;
+  width: 40%;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div h1 {
-  color: #2F4F4F;
+  color: #1D6F72;
   font-weight: bold;
-  font-size: 75px;
+  font-size: 66px;
   margin: 0% 0% 8% 0%;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div p {
   font-size: 20px;
-  width: 85%;
+  width: 70%;
   margin: 0% 15% 0% 5%;
   font-weight: bold;
   text-align: right;
-  color: #2F4F4F;
+  color: #1D6F72;
   background-color: #ffffff5d;
   padding: 5%;
 }
@@ -15972,11 +15972,11 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork div button:hover {
-  background-color: #2F4F4F;
+  background-color: #1D6F72;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork a {
-  width: 65%;
+  width: 60%;
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork a #workImg div {
@@ -15984,8 +15984,8 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent2 #divWork a #workImg div img {
-  height: 260px;
-  width: 477px;
+  height: 270px;
+  width: 400px;
 }
 
 * body #sectionHome #home1 #homeContent3 {
@@ -15999,26 +15999,28 @@ readers do not read off random characters that represent icons */
 
 * body #sectionHome #home1 #homeContent3 #divAbout {
   width: 100%;
+  height: 100%;
   display: flex;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div {
-  width: 35%;
+  width: 40%;
+  padding-left: 5%;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div h1 {
-  color: #ae4a02;
+  color: #1D6F72;
   font-weight: bold;
   font-size: 75px;
   margin: 0% 0% 5% 0%;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div p {
-  color: #ae4a02;
+  color: #1D6F72;
   font-size: 20px;
   text-align: right;
-  width: 50%;
-  margin: 10% 0% 0% 16%;
+  width: 60%;
+  margin: 10% 0% 0% 10%;
   font-weight: bold;
   background-color: #ffffff5d;
   padding: 2%;
@@ -16036,19 +16038,23 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div button:hover {
-  background-color: #b1632c;
+  background-color: #296D6C;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout a {
-  width: 65%;
+  width: 60%;
+  height: 100%;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg {
+  height: 100%;
+  width: 100%;
   display: flex;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout a #AboutImg img {
-  height: 550px;
+  height: 100%;
+  padding-left: 5%;
 }
 
 * body #sectionHome #home1 #homeContent4 {
@@ -16105,6 +16111,8 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionHome #home1 #homeContent4 #divContact #contactImg {
+  display: flex;
+  justify-content: center;
   width: 60%;
 }
 
@@ -16141,8 +16149,8 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionWork #workTitle {
-  background-color: #2F4F4F;
-  height: 100vh;
+  background-color: #1D6F72;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16151,10 +16159,29 @@ readers do not read off random characters that represent icons */
 * body #sectionWork #workTitle div h1 {
   font-size: 90px;
   font-weight: bold;
+  color: #fff;
+}
+
+* body #sectionWork .works {
+  background-color: #dc3545;
+}
+
+* body #sectionWork .works div {
+  padding: 5% 0%;
+  height: fit-content;
+}
+
+* body #sectionWork .works div h3 {
+  color: red;
+  text-align: center;
+}
+
+* body #sectionWork .works #caminar {
+  padding: 5% 0%;
 }
 
 * body #sectionAbout #aboutTitle {
-  background-color: #ae4a02;
+  background-color: #1D6F72;
   height: 100vh;
   display: flex;
   justify-content: center;
