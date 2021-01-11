@@ -15790,8 +15790,39 @@ readers do not read off random characters that represent icons */
   justify-content: space-between;
 }
 
-* body header #theo img {
+* body header #theo {
+  display: flex;
+  width: 150px;
+}
+
+* body header #theo a img {
   height: 70px;
+}
+
+* body header #theo div {
+  width: 100%;
+}
+
+* body header #theo div a {
+  margin: 0% 0% 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+* body header #theo div a i {
+  margin: 10% 0% 0% 0%;
+  font-size: 30px;
+  color: #fff;
+}
+
+* body header #theo div a span {
+  margin: 5% 0% 0% 0%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
 }
 
 * body header #headerDroit {
@@ -15821,7 +15852,7 @@ readers do not read off random characters that represent icons */
 }
 
 * body #navRight {
-  background-color: lightblue;
+  background-color: #B7A394;
   height: 100vh;
 }
 
@@ -16023,7 +16054,7 @@ readers do not read off random characters that represent icons */
   margin: 10% 0% 0% 10%;
   font-weight: bold;
   background-color: #ffffff5d;
-  padding: 2%;
+  padding: 5%;
 }
 
 * body #sectionHome #home1 #homeContent3 #divAbout div button {
@@ -16148,8 +16179,12 @@ readers do not read off random characters that represent icons */
   color: #fff;
 }
 
+* body #sectionWork {
+  background-color: #dfcfcac2;
+}
+
 * body #sectionWork #workTitle {
-  background-color: #1D6F72;
+  background-color: #B7A394;
   height: 75vh;
   display: flex;
   justify-content: center;
@@ -16183,7 +16218,7 @@ readers do not read off random characters that represent icons */
 
 * body #sectionWork div .kard #workDesc {
   padding: 0%;
-  background-color: #3b8f92c7;
+  background-color: #B7A394;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   height: 100%;
@@ -16220,7 +16255,7 @@ readers do not read off random characters that represent icons */
 
 * body #sectionWork div .kard #workDesc2 {
   padding: 0%;
-  background-color: #3b8f92c7;
+  background-color: #B7A394;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 100%;
@@ -16265,7 +16300,7 @@ readers do not read off random characters that represent icons */
 
 * body #sectionWork div .kardt #workDesc {
   padding: 0%;
-  background-color: #3b8f92c7;
+  background-color: #B7A394;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   height: 100%;
@@ -16298,7 +16333,7 @@ readers do not read off random characters that represent icons */
 
 * body #sectionWork div .kardt #workDesc2 {
   padding: 0%;
-  background-color: #3b8f92c7;
+  background-color: #B7A394;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 100%;
@@ -16365,20 +16400,24 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionWork div #retour a i {
-  color: #3b8f92c7;
+  color: #B7A394;
   margin: 2%;
   font-size: 40px;
 }
 
 * body #sectionWork div #retour a span {
   font-size: 25px;
-  color: #3b8f92c7;
+  color: #B7A394;
   font-weight: bold;
   margin: 2% 0% 0% 0%;
 }
 
+* body #sectionAbout {
+  background-color: #dfcfcac2;
+}
+
 * body #sectionAbout #aboutTitle {
-  background-color: #1D6F72;
+  background-color: #B7A394;
   height: 75vh;
   display: flex;
   justify-content: center;
@@ -16404,14 +16443,14 @@ readers do not read off random characters that represent icons */
 }
 
 * body #sectionAbout #retour a i {
-  color: #3b8f92c7;
+  color: #B7A394;
   margin: 2%;
   font-size: 40px;
 }
 
 * body #sectionAbout #retour a span {
   font-size: 25px;
-  color: #3b8f92c7;
+  color: #B7A394;
   font-weight: bold;
   margin: 2% 0% 0% 0%;
 }

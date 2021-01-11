@@ -12,6 +12,7 @@ let homeContent1 = document.getElementById('homeContent1');
 let homeContent2 = document.getElementById('homeContent2');
 let homeContent3 = document.getElementById('homeContent3');
 let homeContent4 = document.getElementById('homeContent4');
+let parties = document.querySelectorAll('.partie');
 
 let btnWork = document.getElementById('btnWork');
 let btnAbout = document.getElementById('btnAbout');
@@ -36,27 +37,18 @@ logoET.addEventListener('mouseover', function(){
 logoET.addEventListener('mouseout', function(){
     logoET.style.transform = "initial"
 });
-
-// Transparence Navbar
-// let myNav = document.getElementById('mynav');
-// let compt = 0
-// let temp;
-
-// window.addEventListener('scroll', function () { 
-//     temp = document.body.scrollTop += 1;
-//     compt += temp;
-//     console.log(compt)
-//     // "use strict";
-//     if (compt >= 50 ) {
-//         myNav.style.zIndex = 1;
-//         myNav.classList.add("nav-colored");
-//         myNav.classList.remove("nav-transparent");
-//     } 
-//     else {
-//         myNav.classList.add("nav-transparent");
-//         myNav.classList.remove("nav-colored");
-//     }
-// });
+for (let i = 0; i < naviRight.length; i++) {
+    logoET.addEventListener('click', function(){
+        sectionHome.style.display = "block";     
+        homeContent1.style.display = "block";
+        sectionWork.style.display = "none";            
+        sectionAbout.style.display = "none";
+        homeContent2.style.display = "none";
+        homeContent3.style.display = "none";
+        homeContent4.style.display = "none";
+        lienSend[i].style.color = "#fff";
+    })
+};
 
 // Affichage de la Navbar coin supérieur droit
 plus.addEventListener('click', function(){
@@ -166,7 +158,7 @@ for (let i = 0; i < lienSend.length; i++) {
                 homeContent3.style.display = "none";
                 homeContent4.style.display = "block";
                 break;
-        }
+        };
     })
 }
 
@@ -200,11 +192,83 @@ retour.addEventListener('click', function(){
     myNav.style.backgroundColor = "initial"
 });
 
+let compt = 0;
+let index = 0;
+sectionHome.addEventListener('mousewheel', function(e){
+    if(index <= 18 || index >= 0){
+        for (let i = 0; i < parties.length; i++) {
+            if(e.wheelDeltaY < 0){
+                index +=i
+            } else if (e.wheelDeltaY > 0){
+                index -=i
+            };
+            console.log(index)
+            switch(index){
+                case 0:
+                    lienSend[0].style.color = "#1D6F72";
+                    lienSend[1].style.color = "#fff";
+                    lienSend[2].style.color = "#fff";
+                    lienSend[3].style.color = "#fff";    
+                    homeContent1.style.display = "block";
+                    homeContent2.style.display = "none";
+                    homeContent3.style.display = "none";
+                    homeContent4.style.display = "none";
+                    break;
+                case 6:
+                    lienSend[0].style.color = "#fff";
+                    lienSend[1].style.color = "#1D6F72";
+                    lienSend[2].style.color = "#fff";
+                    lienSend[3].style.color = "#fff";    
+                    homeContent1.style.display = "none";
+                    homeContent2.style.display = "block";
+                    homeContent3.style.display = "none";
+                    homeContent4.style.display = "none";
+                    break;
+                case 12:
+                    lienSend[0].style.color = "#fff";
+                    lienSend[1].style.color = "#fff";
+                    lienSend[2].style.color = "#1D6F72";
+                    lienSend[3].style.color = "#fff";    
+                    homeContent1.style.display = "none";
+                    homeContent2.style.display = "none";
+                    homeContent3.style.display = "block";
+                    homeContent4.style.display = "none";
+                    break;
+                case 18:
+                    lienSend[0].style.color = "#fff";
+                    lienSend[1].style.color = "#fff";
+                    lienSend[2].style.color = "#fff";
+                    lienSend[3].style.color = "#1D6F72";    
+                    homeContent1.style.display = "none";
+                    homeContent2.style.display = "none";
+                    homeContent3.style.display = "none";
+                    homeContent4.style.display = "block";
+                    break;
+            }      
+        }
+    } 
+    else if (index >= 19 || index <= 0){
+        index = 0;
+    }
+})
 
+//// Transparence Navbar
+// let myNav = document.getElementById('mynav');
+// let compt = 0
+// let temp;
 
-// let sectionHome = document.getElementById("sectionHome");
-
-// sectionHome.addEventListener('scroll', function(){
-//     // console.log(e)
-//     console.log('scrolled')
-// })
+// window.addEventListener('scroll', function () { 
+//     temp = document.body.scrollTop += 1;
+//     compt += temp;
+//     console.log(compt)
+//     // "use strict";
+//     if (compt >= 50 ) {
+//         myNav.style.zIndex = 1;
+//         myNav.classList.add("nav-colored");
+//         myNav.classList.remove("nav-transparent");
+//     } 
+//     else {
+//         myNav.classList.add("nav-transparent");
+//         myNav.classList.remove("nav-colored");
+//     }
+// });
