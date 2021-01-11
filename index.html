@@ -10,7 +10,7 @@
 
 <body>
     <!-- HOMEPAGE Header -->
-    <header>
+    <header id="mynav" class="nav-transparent">
         <div id="theo">
             <a href="#"><img src="./public/img/LogoETblanc.svg" alt="Initiales" id="logoET"></a>
         </div>      
@@ -45,7 +45,7 @@
 
     <!-- HOMEPAGE -->
         <!-- Try Glitch -->
-    <section id="sectionHome"  style="display: none;">
+    <section id="sectionHome" style="display: none;">
         <!-- 1ère row -->
         <div id="home1" class="row m-0">
             <!-- side nav -->
@@ -140,15 +140,15 @@
         </div>
         <!-- 2ème row -->
         <div id="home2" class="row m-0">
-            <div id="scroll">
+            <!-- <div id="scroll">
                 <p>ScrollDown</p>
                 <i class="fas fa-angle-double-down"></i>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- 2ème page WORK -->
-    <section id="sectionWork">
+    <section id="sectionWork" style="display: none;">
         <div id="workTitle">
             <div>
                 <h1>Mes réalisations</h1>
@@ -157,48 +157,183 @@
         </div>
         <!-- Contenu -->
         <div class="container" class="works">
-            <!-- Sites -->
+            <!-- WebSites -->
             <div>
-                <h3>Tous les sites présents dans cette section ont été réalisés dans le cadre de ma formation "Full-Stack Web Developer" chez MolenGeek</h3>
+                <h3>Les sites réalisés dans le cadre de la formation "Full-Stack Web Developer" à MolenGeek.</h3>
             </div>
             <!-- 1er site : Caminar -->
-            <div id="caminar" class="row m-0">
-                <div class="col-8" class="workDesc">
-                    <h4>"Caminar"</h4>
-                    <p></p>
-                    <p>Langages utilisés : Html et css</p>
-                    <button>Aller vers le site</button>
+            <div id="caminar" class="kard row mr-0">
+                <div class="col-6" id="workDesc">
+                    <h4>" Caminar "</h4>
+                    <p>Outils utilisés : Html et CSS</p>
+                    <a href="https://theodorae.github.io/caminar/" target="_blank"><button>Aller vers le site</button></a>
                 </div>
-                <div class="col-4" class="workImg">
+                <div class="col-6" id="workImg">
                     <img src="./public/img/work/1caminar.png" alt="">
                 </div>
             </div>
-        </div>
+            <!-- 2ème site : YouCommunik -->
+            <div id="youcommunik" class="kard row mr-0">
+                <div class="col-6" id="workImg2">
+                    <img src="./public/img/work/2youCommunik2.png" alt="">
+                </div>
+                <div class="col-6" id="workDesc2">
+                    <h4>" YouCommunik "</h4>
+                    <p>Outils utilisés : Html et CSS</p>
+                    <a href="https://theodorae.github.io/youCommunik2/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+            </div>
+            <!-- 3ème site : YouCommunik2 -->
+            <div id="youcommunik2" class="kard row mr-0">
+                <div class="col-6" id="workDesc">
+                    <h4>" YouCommunik 2 "</h4>
+                    <p>Outils utilisés : Html, SASS, Bootstrap</p>
+                    <a href="https://theodorae.github.io/YouCommunik3/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+                <div class="col-6" id="workImg">
+                    <img src="./public/img/work/3YouCommunik3.png" alt="">
+                </div>
+            </div>
+            <!-- 4ème site : StartCSS -->
+            <div id="startCSS" class="kard row mr-0">
+                <div class="col-6" id="workImg2">
+                    <img src="./public/img/work/4sartCSS.png" alt="">
+                </div>
+                <div class="col-6" id="workDesc2">
+                    <h4>" StartCSS "</h4>
+                    <p>Outils utilisés : Html, CSS, Bootstrap et responsive</p>
+                    <a href="https://theodorae.github.io/startCSS/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+            </div>
+            <!-- 5ème site : Site du chef -->
+            <div id="siteChef" class="kard row mr-0">
+                <div class="col-6" id="workDesc">
+                    <h4>" Le site du chef "</h4>
+                    <p>Site reprenant toutes les notions apprises le premier mois de formation. Outils utilisés : Html, SASS, Bootstrap et responsive</p>
+                    <a href="https://theodorae.github.io/site_du_chef/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+                <div class="col-6" id="workImg">
+                    <img src="./public/img/work/6siteDuChef.png" alt="">
+                </div>
+            </div>
+            <!-- 6ème site : spatial -->
+            <div id="spatial" class="kard row mr-0">
+                <div class="col-6" id="workImg2">
+                    <img src="./public/img/work/8spatial.png" alt="">
+                </div>
+                <div class="col-6" id="workDesc2">
+                    <h4>" Spatial "</h4>
+                    <p>Outils utilisés : Html, SASS, Bootstrap et responsive</p>
+                    <a href="https://theodorae.github.io/spatial/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+            </div>
+            <!-- 7ème site : GitExo -->
+            <div id="faith" class="kard row mr-0">
+                <div class="col-6" id="workDesc">
+                    <h4>" ExoGit - Faith "</h4>
+                    <p>Outils utilisés : Html, SASS, Bootstrap et responsive</p>
+                    <a href="https://theodorae.github.io/GitExo_faith/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+                <div class="col-6" id="workImg">
+                    <img src="./public/img/work/9gitExercice.png" alt="">
+                </div>
+            </div>
 
-        <!-- <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita nostrum pariatur itaque, perferendis quisquam voluptate reprehenderit amet fugit eaque molestias laboriosam sapiente molestiae tempora? Labore ab alias hic iure.</p>
-        </div> -->
-<!--  Ne pas oublier bouton de retour -->
+            <!-- JavaScript -->
+            <div id="divTitre">
+                <h3>Applications en JavaScript</h3>
+            </div>
+            <!-- Générateur de style -->
+            <div id="genStyle" class="kardt row mr-0">
+                <div class="col-6" id="workDesc">
+                    <h4>" Générateur de style "</h4>
+                    <a href="https://theodorae.github.io/StyleGenerator/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+                <div class="col-6" id="workImg">
+                    <img src="./public/img/work/styleGenerator.png" alt="">
+                </div>
+            </div>
+            <!-- Calculatrice -->
+            <div id="calc" class="kardt row mr-0">
+                <div class="col-6" id="workImg2">
+                    <img src="./public/img/work/calculatrice.png" alt="">
+                </div>
+                <div class="col-6" id="workDesc2">
+                    <h4>" Calculatrice "</h4>
+                    <a href="https://theodorae.github.io/LAcalculatrice/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+            </div>
+            <!-- To Do List -->
+            <div id="toDo" class="kardt row mr-0">
+                <div class="col-6" id="workDesc">
+                    <h4>" To do List "</h4>
+                    <a href="https://theodorae.github.io/ToDoList/" target="_blank"><button>Aller vers le site</button></a>
+                </div>
+                <div class="col-6" id="workImg">
+                    <img src="./public/img/work/toDoList.png" alt="">
+                </div>
+            </div>
+
+            <!-- Personnel -->
+            <div id="divTitre">
+                <h4>Voici un projet personnel sur lequel j'ai travaillé grâce à la formation suivie. Il s'agit d'un jeu inspiré des combats Pokemon. Ce site a été réalisé à l'aide de JavaScript et de DOM.</h4>
+            </div>
+            <div id="poke" class=" row mr-0">
+                <a href="https://theodorae.github.io/PokeMoon/" target="_blank"><img src="./public/img/work/pokemoon.png" alt=""></a>
+            </div>
+
+            <!-- retour -->
+            <div id="retour">
+                <a href="#sectionHome" class="retour">
+                    <i class="fas fa-angle-double-left"></i>
+                    <span>Retour</span> 
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- 3ème page ABOUT -->
-    <section id="sectionAbout" style="display: none;">
+    <section id="sectionAbout" >
         <div id="aboutTitle">
             <div>
                 <h1>A propos de moi</h1>
             </div>
         </div>
-        <!--  Ne pas oublier bouton de retour -->
+        <!-- Contenu -->
+        <div class="container">
+            <!-- Présentation -->
+            <div>
+                <h3>Quelques mots sur moi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos.</p>
+            </div>
+            <!-- Formation -->
+            <div>
+                <h3>Ma formation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eligendi.</p>
+            </div>
+            <!-- Cv -->
+            <div>
+                <h3>Mon CV</h3>
+                <div>
+
+                </div>
+            </div>
+            <!-- Skills -->
+            <div>
+                <h3>Mes skills</h3>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- retour -->
+        <div id="retour">
+            <a href="#sectionHome" class="retour">
+                <i class="fas fa-angle-double-left"></i>
+                <span>Retour</span> 
+            </a>
+        </div>
     </section>
-
-
-
-
-
-
-
-<!-- TEST -->
-
 
 
     <!-- Jquery -->

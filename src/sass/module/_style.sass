@@ -5,7 +5,7 @@
     body
         margin: 0
         header
-            padding: 0.5% 1.5% 0% 1.5%
+            padding: 0.5% 1.5% 0.5% 1.5%
             width: 100%
             position: fixed
             top: 0%
@@ -32,6 +32,10 @@
                         #plus
                             font-size: 40px
                             padding: 0% 5% 0% 0%
+        // .nav-transparent
+        //     background-color: initial
+        // .nav-colored
+        //     background-color: #1D6F72
         #navRight
             background-color: lightblue
             height: 100vh
@@ -103,7 +107,7 @@
                                 color: $dark
                                 // font-weight: bold
                         div:hover
-                            border: $white 3px solid
+                            border: $white 5px solid
                 //// 2ème slide : My work
                 #homeContent2
                     width: 90%
@@ -276,22 +280,159 @@
                         font-size: 90px
                         font-weight: bold
                         color: $white
-            .works
-                background-color: $red
+                    h2
+                        color: $white
+            div
                 div
-                    padding: 5% 0%
+                    padding: 6% 0%
                     height: fit-content
                     h3
-                        color: red
+                        margin: 2% 0% 0% 0%
                         text-align: center
-                #caminar
-                    padding: 5% 0%
-                    // .workDesc
-                    // .workImg
+                        line-height: 2
+                .kard
+                    border-radius: 30px
+                    #workDesc
+                        padding: 0%
+                        background-color: #3b8f92c7
+                        border-top-left-radius: 30px
+                        border-bottom-left-radius: 30px
+                        height: 100%
+                        h4
+                            margin: 8% 0% 5% 8%
+                        p
+                            margin: 6% 0% 3% 8%
+                        a
+                            button
+                                border: none
+                                padding: 1.5%
+                                margin: 4% 0% 14% 8%
+                                border-radius: 5px
+                    #workImg
+                        border-top-right-radius: 30px
+                        border-bottom-right-radius: 30px
+                        padding: 0%
+                        height: 100%
+                        img
+                            border-top-right-radius: 30px
+                            border-bottom-right-radius: 30px
+                            width: 100%
+                            height: 290px
+                    #workDesc2
+                        padding: 0%
+                        background-color: #3b8f92c7
+                        border-top-right-radius: 30px
+                        border-bottom-right-radius: 30px
+                        height: 100%
+                        h4
+                            margin: 8% 0% 5% 8%
+                        p
+                            margin: 6% 0% 3% 8%
+                        a
+                            button
+                                border: none
+                                padding: 1.5%
+                                margin: 4% 0% 14% 8%
+                                border-radius: 5px
+                    #workImg2
+                        border-top-left-radius: 30px
+                        border-bottom-left-radius: 30px
+                        padding: 0%
+                        height: 100%
+                        img
+                            border-top-left-radius: 30px
+                            border-bottom-left-radius: 30px
+                            width: 100%
+                            height: 290px
+                #siteChef
+                    div:fist-child
+                    div:nth-child(2)
+                        img
+                            height: 315px
+                .kardt
+                    border-radius: 30px
+                    #workDesc
+                        padding: 0%
+                        background-color: #3b8f92c7
+                        border-top-left-radius: 30px
+                        border-bottom-left-radius: 30px
+                        height: 100%
+                        h4
+                            margin: 8% 0% 10% 8%
+                        a
+                            button
+                                border: none
+                                padding: 1.5%
+                                margin: 4% 0% 15% 8%
+                                border-radius: 5px
+                    #workImg
+                        border-top-right-radius: 30px
+                        border-bottom-right-radius: 30px
+                        padding: 0%
+                        height: 100%
+                        img
+                            border-top-right-radius: 30px
+                            border-bottom-right-radius: 30px
+                            width: 100%
+                            height: 275px
+                    #workDesc2
+                        padding: 0%
+                        background-color: #3b8f92c7
+                        border-top-right-radius: 30px
+                        border-bottom-right-radius: 30px
+                        height: 100%
+                        h4
+                            margin: 8% 0% 10% 8%
+                        a
+                            button
+                                border: none
+                                padding: 1.5%
+                                margin: 4% 0% 15% 8%
+                                border-radius: 5px
+                    #workImg2
+                        border-top-left-radius: 30px
+                        border-bottom-left-radius: 30px
+                        padding: 0%
+                        height: 100%
+                        img
+                            border-top-left-radius: 30px
+                            border-bottom-left-radius: 30px
+                            width: 100%
+                            height: 275px
+                #poke
+                    display: flex
+                    justify-content: center
+                    img
+                        height: 500px
+                #divTitre
+                    padding: 0%
+                    h3
+                        font-weight: bold
+                        text-decoration: underline
+                    h4
+                        text-align: center
+                        margin: 5% 0% 0% 4%
+                #retour
+                    padding: 1% 0%
+                    a
+                        display: flex
+                        justify-content: center
+                        width: 100%
+                        font-size: 20px
+                        text-decoration: none
+                        i
+                            color: #3b8f92c7
+                            margin: 2%
+                            font-size: 40px
+                        span
+                            font-size: 25px
+                            color: #3b8f92c7
+                            font-weight: bold
+                            margin: 2% 0% 0% 0%
         #sectionAbout
             #aboutTitle
                 background-color: #1D6F72
-                height: 100vh
+                height: 75vh
                 display: flex
                 justify-content: center
                 align-items: center
@@ -299,11 +440,28 @@
                     h1
                         font-size: 90px
                         font-weight: bold
+                        color: $white
+            div
+                
+            #retour
+                padding: 1% 0%
+                a
+                    display: flex
+                    justify-content: center
+                    width: 100%
+                    font-size: 20px
+                    text-decoration: none
+                    i
+                        color: #3b8f92c7
+                        margin: 2%
+                        font-size: 40px
+                    span
+                        font-size: 25px
+                        color: #3b8f92c7
+                        font-weight: bold
+                        margin: 2% 0% 0% 0%
     
-    
+
     
 button:focus
     outline: none
-
-
-// background: linear-gradient(rgba(22, 20, 20, 0.877), rgba(0, 0, 0, 0.849)),url("../images/banner1.jpg")

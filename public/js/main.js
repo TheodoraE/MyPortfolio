@@ -1,4 +1,4 @@
-// let body = document.body
+let body = document.body
 
 //////// Déclarations de variables
 let logoET = document.getElementById('logoET');
@@ -26,7 +26,8 @@ let sectionAbout = document.getElementById('sectionAbout');
 let navRight = document.querySelector('#navRight');
 let moins = document.querySelector('#moins');
 let naviRight = document.querySelectorAll('.naviRight');
-console.log(naviRight)
+
+let retour = document.querySelector('.retour');
 
 // Animation sur Logo Header
 logoET.addEventListener('mouseover', function(){
@@ -36,9 +37,32 @@ logoET.addEventListener('mouseout', function(){
     logoET.style.transform = "initial"
 });
 
+// Transparence Navbar
+// let myNav = document.getElementById('mynav');
+// let compt = 0
+// let temp;
+
+// window.addEventListener('scroll', function () { 
+//     temp = document.body.scrollTop += 1;
+//     compt += temp;
+//     console.log(compt)
+//     // "use strict";
+//     if (compt >= 50 ) {
+//         myNav.style.zIndex = 1;
+//         myNav.classList.add("nav-colored");
+//         myNav.classList.remove("nav-transparent");
+//     } 
+//     else {
+//         myNav.classList.add("nav-transparent");
+//         myNav.classList.remove("nav-colored");
+//     }
+// });
+
 // Affichage de la Navbar coin supérieur droit
 plus.addEventListener('click', function(){
     sectionHome.style.display = "none";
+    sectionWork.style.display = "none";            
+    sectionAbout.style.display = "none";
     navRight.style.display = "block";
     plus.style.display = "none";
     moins.style.display = "inline-block";
@@ -46,6 +70,8 @@ plus.addEventListener('click', function(){
 moins.addEventListener('click', function(){
     navRight.style.display = "none";
     sectionHome.style.display = "block";
+    sectionWork.style.display = "none";            
+    sectionAbout.style.display = "none";
     moins.style.display = "none";
     plus.style.display = "inline-block";
 });
@@ -61,6 +87,8 @@ for (let i = 0; i < naviRight.length; i++) {
                 homeContent1.style.display = "block";
                 sectionWork.style.display = "none";            
                 sectionAbout.style.display = "none";
+                homeContent2.style.display = "none";
+                homeContent3.style.display = "none";
                 homeContent4.style.display = "none";
                 break;
             case 1:
@@ -68,6 +96,8 @@ for (let i = 0; i < naviRight.length; i++) {
                 homeContent1.style.display = "none";
                 sectionWork.style.display = "block";
                 sectionAbout.style.display = "none";
+                homeContent2.style.display = "none";
+                homeContent3.style.display = "none";
                 homeContent4.style.display = "none";
                 break;
             case 2:
@@ -75,6 +105,8 @@ for (let i = 0; i < naviRight.length; i++) {
                 homeContent1.style.display = "none";
                 sectionWork.style.display = "none";
                 sectionAbout.style.display = "block";
+                homeContent2.style.display = "none";
+                homeContent3.style.display = "none";
                 homeContent4.style.display = "none";
                 break;
             case 3:
@@ -82,6 +114,8 @@ for (let i = 0; i < naviRight.length; i++) {
                 homeContent1.style.display = "none";
                 sectionWork.style.display = "none";
                 sectionAbout.style.display = "none";
+                homeContent2.style.display = "none";
+                homeContent3.style.display = "none";
                 homeContent4.style.display = "block";
                 break;
         };
@@ -157,6 +191,15 @@ btn2About.addEventListener('click', function(){
     sectionWork.style.display = "none";
     sectionAbout.style.display = "block";
 });
+
+// Retour à l'acceuil
+retour.addEventListener('click', function(){
+    sectionHome.style.display = "block";
+    sectionAbout.style.display = "none";
+    sectionWork.style.display = "none";
+    myNav.style.backgroundColor = "initial"
+});
+
 
 
 // let sectionHome = document.getElementById("sectionHome");
