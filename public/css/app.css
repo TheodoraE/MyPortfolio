@@ -16042,7 +16042,7 @@ readers do not read off random characters that represent icons */
 * body #sectionHome #home1 #homeContent3 #divAbout div h1 {
   color: #1D6F72;
   font-weight: bold;
-  font-size: 75px;
+  font-size: 65px;
   margin: 0% 0% 5% 0%;
 }
 
@@ -16428,6 +16428,40 @@ readers do not read off random characters that represent icons */
   font-size: 90px;
   font-weight: bold;
   color: #fff;
+}
+
+* body #sectionAbout #aboutTitle div h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+* body #sectionAbout div #intro {
+  padding: 6% 0%;
+}
+
+* body #sectionAbout div #intro h2 {
+  padding: 0% 8%;
+  text-align: center;
+}
+
+* body #sectionAbout div div {
+  padding: 4% 0%;
+}
+
+* body #sectionAbout div div h3 {
+  background-color: #B7A394;
+  margin: 0% 0% 4% 0%;
+  padding: 1%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+* body #sectionAbout div div p {
+  padding: 0% 0% 0% 2%;
+}
+
+* body #sectionAbout div div h5 {
+  padding: 0% 0% 2% 2%;
 }
 
 * body #sectionAbout #retour {

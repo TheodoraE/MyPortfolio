@@ -28,7 +28,7 @@ let navRight = document.querySelector('#navRight');
 let moins = document.querySelector('#moins');
 let naviRight = document.querySelectorAll('.naviRight');
 
-let retour = document.querySelector('.retour');
+let retour = document.querySelectorAll('.retour');
 
 // Animation sur Logo Header
 logoET.addEventListener('mouseover', function(){
@@ -46,6 +46,7 @@ for (let i = 0; i < naviRight.length; i++) {
         homeContent2.style.display = "none";
         homeContent3.style.display = "none";
         homeContent4.style.display = "none";
+        lienSend[0].style.color = "#1D6F72";
         lienSend[i].style.color = "#fff";
     })
 };
@@ -75,6 +76,10 @@ for (let i = 0; i < naviRight.length; i++) {
         plus.style.display = "inline-block";   
         switch(i){
             case 0:
+                lienSend[0].style.color = "#1D6F72";
+                lienSend[1].style.color = "#fff";
+                lienSend[2].style.color = "#fff";
+                lienSend[3].style.color = "#fff";
                 sectionHome.style.display = "block";     
                 homeContent1.style.display = "block";
                 sectionWork.style.display = "none";            
@@ -84,6 +89,10 @@ for (let i = 0; i < naviRight.length; i++) {
                 homeContent4.style.display = "none";
                 break;
             case 1:
+                lienSend[0].style.color = "#fff";
+                lienSend[1].style.color = "#1D6F72";
+                lienSend[2].style.color = "#fff";
+                lienSend[3].style.color = "#fff";
                 sectionHome.style.display = "none";     
                 homeContent1.style.display = "none";
                 sectionWork.style.display = "block";
@@ -93,6 +102,10 @@ for (let i = 0; i < naviRight.length; i++) {
                 homeContent4.style.display = "none";
                 break;
             case 2:
+                lienSend[0].style.color = "#fff";
+                lienSend[1].style.color = "#fff";
+                lienSend[2].style.color = "#1D6F72";
+                lienSend[3].style.color = "#fff";
                 sectionHome.style.display = "none";     
                 homeContent1.style.display = "none";
                 sectionWork.style.display = "none";
@@ -102,6 +115,10 @@ for (let i = 0; i < naviRight.length; i++) {
                 homeContent4.style.display = "none";
                 break;
             case 3:
+                lienSend[0].style.color = "#fff";
+                lienSend[1].style.color = "#fff";
+                lienSend[2].style.color = "#fff";
+                lienSend[3].style.color = "#1D6F72";
                 sectionHome.style.display = "block";     
                 homeContent1.style.display = "none";
                 sectionWork.style.display = "none";
@@ -185,12 +202,14 @@ btn2About.addEventListener('click', function(){
 });
 
 // Retour à l'acceuil
-retour.addEventListener('click', function(){
-    sectionHome.style.display = "block";
-    sectionAbout.style.display = "none";
-    sectionWork.style.display = "none";
-    myNav.style.backgroundColor = "initial"
-});
+for (let i = 0; i < retour.length; i++) {
+    retour[i].addEventListener('click', function(){
+        sectionHome.style.display = "block";
+        sectionAbout.style.display = "none";
+        sectionWork.style.display = "none";
+        myNav.style.backgroundColor = "initial"
+    });    
+}
 
 let compt = 0;
 let index = 0;
